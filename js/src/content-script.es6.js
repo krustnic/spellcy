@@ -1,8 +1,6 @@
 import Page from "./page";
 
 chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
-	console.log("event", request);
-
 	if ( request.event == "cs-get-text" ) {		
 
 		var $html = $("body").clone().find("script,noscript,style").remove().end();		

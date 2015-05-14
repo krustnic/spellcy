@@ -15,7 +15,6 @@ export default class Storage {
                 self._watching = obj["domains"];
             }
 
-            console.log("Loaded: ", self._watching);
         });
 	}
 
